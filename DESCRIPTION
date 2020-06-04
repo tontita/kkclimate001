@@ -1,0 +1,15 @@
+Package: kkclimate001
+Title: SGG CODE package
+Version: 0.0.1.1001
+Authors@R: 
+    person(given = "Seong",
+           family = "Choi",
+           role = c("aut", "cre"),
+           email = "first.last@example.com",
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: It contains functions dealing with sgg_code data frame.
+License: `use_gpl3_license()` 
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.0
