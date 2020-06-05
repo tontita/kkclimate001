@@ -1,6 +1,7 @@
 #' Get Sigungu Code Data Frame 
 #'
 #' This function allows you to get sgg code data frame.
+#'
 #' @param sgg_code_name_rds sgg_code_name rds filename. Default value is "sgg_code_name.rds".
 #' @param sgg_code_name_xls sgg_code_name xls filename. Default value is "sggcode.xlsx".
 #' @return A data frame of sgg_code_name
@@ -25,6 +26,7 @@ get_sgg_code_name_df <- function(sgg_code_name_rds = "sgg_code_name.rds", sgg_co
 #' Get Sido Code Character String
 #'
 #' This function allows you to get sido_code by passing sido_name.
+#' 
 #' @param sgg_code_name_df sgg_code_name dataframe
 #' @param sidonamestr sido_name string (e.g. '서울특별시', '경기도').
 #' @return A character string of sido_code
@@ -42,6 +44,7 @@ get_sidocode <- function(sgg_code_name_df, sidonamestr) {
 #' Get Sigungu Code Character String
 #'
 #' This function allows you to get sgg_code by passing ssg_name.
+#' 
 #' @param sgg_code_name_df sgg_code_name dataframe.
 #' @param sidonamestr sido_name string (e.g. '서울특별시', '경기도').
 #' @param sggnamestr sgg_name string (e.g. '강남구', '수원시').
