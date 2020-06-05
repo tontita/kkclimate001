@@ -8,7 +8,7 @@ Authors@R:
            email = "first.last@example.com",
            comment = c(ORCID = "YOUR-ORCID-ID"))
 Description: It contains functions dealing with sgg_code data frame.
-License: `use_gpl3_license()` 
+License: GPL-3
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
@@ -16,9 +16,9 @@ RoxygenNote: 7.1.0
 Imports: readxl,
 		 dplyr,
 		 stringr
-
-
-
-
-
-
+Depends: 
+    R (>= 2.10)
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
