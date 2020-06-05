@@ -2,23 +2,25 @@
 #'
 #' This function allows you to get sgg code data frame.
 #'
-#' @param sgg_code_name_rds sgg_code_name rds filename. Default value is "sgg_code_name.rds".
-#' @param sgg_code_name_xls sgg_code_name xls filename. Default value is "sggcode.xlsx".
+#' @param sgg_code_rds_fname sgg_code_name rds filename. Default value is "sgg_code_name.rds".
+#' @param sgg_code_xls_fname sgg_code_name xls filename. Default value is "sggcode.xlsx".
 #' @return A data frame of sgg_code_name
 #' @keywords sgg_code
 #' @examples
 #' get_sgg_code_name_df()
 #' @export
-get_sgg_code_name_df <- function(sgg_code_name_rds = "sgg_code_name.rds", sgg_code_name_xls = "sggcode.xlsx") {
-  if(file.exists(sgg_code_name_rds)) {
-    sgg_code_name <- readRDS(file = sgg_code_name_filename)
+get_sgg_code_name_df <- function(sgg_code_rds_fname = "sgg_code_name.rds", sgg_code_xls_fname = "sggcode.xlsx") {
+  if (exists("sgg_code_name") {
+    #go to return
+  } else if(file.exists(sgg_code_rds_fname)) {
+    sgg_code_name <- readRDS(file = sgg_code_rds_fname)
   } else {
-    sgg_code_name <- readxl::read_excel(paste0(getwd(), "/",sgg_code_name_xls), sheet = "sggcode")
+    sgg_code_name <- readxl::read_excel(paste0(getwd(), "/",sgg_code_xls_fname), sheet = "sggcode")
     colnames(sgg_code_name) <- c('sggcode', 'sggname', 'sidoname')
     sgg_code_name <- sgg_code_name %>%
       dplyr::mutate(sidocode = stringr::str_sub(sggcode, 1,2)) %>%
       dplyr::select(sidocode, sidoname, sggcode, sggname)
-    saveRDS(sgg_code_name, file = sgg_code_name_rds)
+    saveRDS(sgg_code_name, file = sgg_code_rds_fname)
   }
   return (sgg_code_name)
 } 
