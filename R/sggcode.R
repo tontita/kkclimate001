@@ -11,7 +11,7 @@
 #' @export
 get_sgg_code_name_df <- function(sgg_code_rds_fname = "sgg_code_name.rds", sgg_code_xls_fname = "sggcode.xlsx") {
   if (exists("sgg_code_name")) {
-    return (sgg_code_name)
+    #go to return
   } else if(file.exists(sgg_code_rds_fname)) {
     sgg_code_name <- readRDS(file = sgg_code_rds_fname)
   } else {
