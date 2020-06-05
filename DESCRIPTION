@@ -1,5 +1,5 @@
 Package: kkclimateR
-Title: SGG CODE package
+Title: KK climate dataset processing package
 Version: 0.0.1.1005
 Authors@R: 
     person(given = "Seong",
