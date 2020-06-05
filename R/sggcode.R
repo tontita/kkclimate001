@@ -1,3 +1,7 @@
+###############################
+# code functions
+###############################
+
 #' Get Sigungu Code Data Frame 
 #'
 #' This function allows you to get sgg code data frame.
