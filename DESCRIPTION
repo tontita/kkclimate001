@@ -1,6 +1,6 @@
 Package: kkclimate001
 Title: SGG CODE package
-Version: 0.0.1.1001
+Version: 0.0.1.1002
 Authors@R: 
     person(given = "Seong",
            family = "Choi",
@@ -13,3 +13,6 @@ Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.0
+Imports: readxl,
+		 dplyr,
+		 stringr

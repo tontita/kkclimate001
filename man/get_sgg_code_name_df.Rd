@@ -2,9 +2,20 @@
 % Please edit documentation in R/sggcode.R
 \name{get_sgg_code_name_df}
 \alias{get_sgg_code_name_df}
-\title{A sgg_code function}
+\title{Get Sigungu Code Data Frame}
 \usage{
-get_sgg_code_name_df()
+get_sgg_code_name_df(
+  sgg_code_name_rds = "sgg_code_name.rds",
+  sgg_code_name_xls = "sggcode.xlsx"
+)
+}
+\arguments{
+\item{sgg_code_name_rds}{sgg_code_name rds filename. Default value is "sgg_code_name.rds".}
+
+\item{sgg_code_name_xls}{sgg_code_name xls filename. Default value is "sggcode.xlsx".}
+}
+\value{
+A data frame of sgg_code_name
 }
 \description{
 This function allows you to get sgg code data frame.

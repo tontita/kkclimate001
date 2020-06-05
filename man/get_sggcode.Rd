@@ -2,7 +2,7 @@
 % Please edit documentation in R/sggcode.R
 \name{get_sggcode}
 \alias{get_sggcode}
-\title{A sgg_code function}
+\title{Get Sigungu Code Character String}
 \usage{
 get_sggcode(sgg_code_name_df, sidonamestr, sggnamestr)
 }
@@ -12,6 +12,9 @@ get_sggcode(sgg_code_name_df, sidonamestr, sggnamestr)
 \item{sidonamestr}{sido_name string (e.g. '서울특별시', '경기도').}
 
 \item{sggnamestr}{sgg_name string (e.g. '강남구', '수원시').}
+}
+\value{
+A character string of sgg_code
 }
 \description{
 This function allows you to get sgg_code by passing ssg_name.

@@ -2,14 +2,17 @@
 % Please edit documentation in R/sggcode.R
 \name{get_sidocode}
 \alias{get_sidocode}
-\title{A sgg_code function}
+\title{Get Sido Code Character String}
 \usage{
 get_sidocode(sgg_code_name_df, sidonamestr)
 }
 \arguments{
-\item{sgg_code_name_df}{sgg_code_name dataframe.}
+\item{sgg_code_name_df}{sgg_code_name dataframe}
 
 \item{sidonamestr}{sido_name string (e.g. '서울특별시', '경기도').}
+}
+\value{
+A character string of sido_code
 }
 \description{
 This function allows you to get sido_code by passing sido_name.
