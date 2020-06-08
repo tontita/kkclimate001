@@ -68,3 +68,5 @@ get_sggcode <- function(sgg_code_name_df, sidonamestr, sggnamestr) {
   }
   return(sggcode)  
 }
+
+
