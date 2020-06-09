@@ -5,8 +5,8 @@ Authors@R:
     person(given = "Seong",
            family = "Choi",
            role = c("aut", "cre"),
-           email = "first.last@example.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
+           email = "indivisibilibus@gmail.com.com",
+           comment = c(ORCID = "0000-0002-3047-347X"))
 Description: It contains functions dealing with sgg_code data frame.
 License: GPL-3
 Encoding: UTF-8
